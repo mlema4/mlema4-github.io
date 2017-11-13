@@ -22,7 +22,11 @@
 
   <!-- Custom styles for this template -->
   <link href="css/resume.min.css" rel="stylesheet">
-
+  <style>
+    #template{
+      display:none;
+    }
+  </style>
 </head>
 
 <body id="page-top">
@@ -252,15 +256,18 @@
     <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
       <div class="my-auto">
         <h2 class="mb-5">Github projects</h2>
-        <div class="container">
-          <div class="card card-dark col-md-3 col-sm-5 col-xs-6">
+        <div class="container cardContainer col-md-12 col-sm-12 col-xs-12">
+          <div class="card card-dark col-md-3 col-sm-5 col-xs-6" id ="template" style="display:inline-block">
             <!--Card image-->
             <div class="view overlay hm-white-slight">
-              <img src="https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2821%29.jpg" class="img-fluid" alt="">
+              <div>
+              <img src="https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2821%29.jpg" class="img-fluid" alt="" style = "max-width: 100%; height: auto">
               <a>
                 <div class="mask"></div>
               </a>
+              </div>
             </div>
+            
             <!--/.Card image-->
             <!--Card content-->
             <div class="card-body">
@@ -270,7 +277,7 @@
               <h4 class="card-title">Card title</h4>
               <hr>
               <!--Text-->
-              <p class="card-text white-text">Description</p>
+              <p class="card-text white-text" id="description" >Description</p>
               <a href="#" class="d-flex flex-row-reverse">
                 <h5 class="waves-effect waves-light p-2">See more <i class="fa fa-chevron-right"></i></h5>
               </a>
