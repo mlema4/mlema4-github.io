@@ -2,18 +2,26 @@
 
     // JavaScript File
 var projects = [
-    {"name": "Arduino Wand Project", "src": "./img/project4.png", "description": "An arduino based game with IR Transmitters and receivers with I2C communication"}
-    ];
+    {"name": "Data app",
+    "src": "./img/project3.png",
+    "description": "Retrieves data from database using the filters provided from the use in the input",
+    "styling" : "display:inline-block"
+    },
+    {"name": "Canvas app",
+    "src": "./img/project4.png",
+    "description": "Simple game using the canvas element in HTML and javascript",
+    "styling" : "display:inline-block"
+    }];
 
 $(function() {
-  jQuery.each(projects, function(i, val) {
+    jQuery.each(projects, function(i, val) {
     console.log( "ready!" );
-      console.log(val.name);
-   var clone =  $("#template").clone().removeAttr("id");
-    //$(clone,).attr("src", "./img/profile.jpg");
-   clone.find(".card-title").text(val.name);
+    console.log(val.name);
+    var clone = $("#template").clone().removeAttr("id");
+    clone.find(".card-title").text(val.name);
     clone.find("#description").text(val.description);
     clone.find("img").attr("src", val.src);
+    
     $(".cardContainer").append(clone);
   });
 });
@@ -44,4 +52,5 @@ $(function() {
             <!--/.Card content-->
           </div>*/
 
+    
     
