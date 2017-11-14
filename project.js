@@ -3,14 +3,15 @@
     // JavaScript File
 var projects = [
     {"name": "Data app",
-    "src": "./img/project3.png",
-    "description": "Retrieves data from database using the filters provided from the use in the input",
-    "styling" : "display:inline-block"
+    "img_src": "./img/project3.png",
+    "description": "Retrieves data from database using the filters provided from the user in the input form",
+    "styling" : "display:inline-block",
+    "src": "https://mlema4.github.io/IT202/project3/"
     },
     {"name": "Canvas app",
-    "src": "./img/project4.png",
+    "img_src": "./img/project4.png",
     "description": "Simple game using the canvas element in HTML and javascript",
-    "styling" : "display:inline-block"
+    "src": "https://mlema4.github.io/IT202/project4/"
     }];
 
 $(function() {
@@ -22,9 +23,11 @@ $(function() {
     clone.find(".card-title").text(val.name);
     clone.find("#description").text(val.description);
     clone.removeClass("hidden");
-    clone.find("img").attr("src", val.src); 
+    clone.find("a").attr("href", val.src);
+    clone.find("img").attr("src", val.img_src); 
     
-    $(".cardContainer").append(clone);
+    
+    $("#cardRow").append(clone);
   });
 });
 
