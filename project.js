@@ -18,9 +18,11 @@ $(function() {
     console.log( "ready!" );
     console.log(val.name);
     var clone = $("#template").clone().removeAttr("id");
+    clone.attr("id", "clone");
     clone.find(".card-title").text(val.name);
     clone.find("#description").text(val.description);
-    clone.find("img").attr("src", val.src);
+    clone.removeClass("hidden");
+    clone.find("img").attr("src", val.src); 
     
     $(".cardContainer").append(clone);
   });
