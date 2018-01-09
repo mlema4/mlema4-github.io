@@ -12,7 +12,33 @@ var projects = [
     "img_src": "./img/project4.png",
     "description": "Simple game using the canvas element in HTML and javascript",
     "src": "https://mlema4.github.io/IT202/project4/"
-    }];
+    },
+    {"name": "Weather PWA tutorial",
+    "img_src": "./img/project5.png",
+    "description": "PWA tutorial utilizing a service worker to implement offline functionality",
+    "src": "https://mlema4.github.io/IT202/project5/"
+    },
+    {"name": "Sound Horn app",
+    "img_src": "./img/project7.png",
+    "description": "Web application utilizing a service worker to play a simple airhorn",
+    "src": "https://mlema4.github.io/IT202/project7/"
+    },
+    {"name": "React Tic-tac-toe",
+    "img_src": "./img/project8.png",
+    "description": "Tic tac toe game in React JS ",
+    "src": "https://mlema4.github.io/IT202/project8/"
+    },
+    {"name": "15Puzzle Game",
+    "img_src": "./img/fifteen.png",
+    "description": "15 puzzle game in java with breadth first search solver",
+    "src": "https://github.com/mlema4/Fifteen-Puzzle"
+    },
+     {"name": "NetWork BattleShip",
+    "img_src": "./img/BattleShip.png",
+    "description": "Client and server BattleShip",
+    "src": "https://github.com/mlema4/BattleShip"
+    }
+    ];
 
 $(function() {
     jQuery.each(projects, function(i, val) {
@@ -29,6 +55,12 @@ $(function() {
     
     $("#cardRow").append(clone);
   });
+  
+/*  $.get( "", function( data ) {
+  $( ".result" ).html( data );
+  alert( "Load was performed." );
+});
+*/
 });
 
 /*
